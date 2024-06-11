@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeSport Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-PJTDKjLf2eZmdtf20f8s/m0+FROvZG+dItIWwh4XbO2y4B3f+cwC/iJkziZx8SjHNlSvD5KrKjPzk+M+xgJhxg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="styleSingle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-secondary">
+
+  <!-- NAVBAR START -->
+  <nav class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <ul class="nav">
+        <li class="nav-item ">
+          <a class="navbar-brand">
+            <img src="logo.jpg" alt="" width="30" height="30" class="me-2">DeSport
+          </a>
+        </li>
+        <li>
+          <a class="navbar-brand ms-2" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="login.html">Login</a>
+        </li>
+      </ul>
+      <ul class="nav ms-auto">
+        <li class="nav-item">
+          <a class="navbar-brand" href="cartPage.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- SINGLE PRODUK START -->
+  <div class="container bg-light mt-4 p-3">
+    <div class="row row-produk">
+      <div class="col-lg-5">
+        <figure class="figure">
+          <img src="PRODUK/Raket.jpg" class="figure-img img-big img-fluid" style="width: 450px;" alt="...">
+          <figcaption class="figure-caption d-flex justify-content-evenly">
+            <img src="PRODUK/Raket.jpg" class="img-small" style="width: 70px;">
+            <img src="PRODUK/Raket.jpg" class="img-small" style="width: 70px;">
+            <img src="PRODUK/Raket.jpg" class="img-small" style="width: 70px;">
+            <img src="PRODUK/Raket.jpg" class="img-small" style="width: 70px;">
+            <img src="PRODUK/Raket.jpg" class="img-small" style="width: 70px;">
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-7">
+        <h4 class="text-responsive">RAKET BULU TANGKIS</h4>
+        <div class="underline"></div>
+        <h4 class="text-muted">Rp215.000</h4>
+        <div class="input-group mt-3 mb-3" style="width: 100px;">
+          <button class="btn btn-sm btn-outline-secondary" type="button" id="button-addon1" onclick="kurang()"><i class="fa-solid fa-minus"></i></button>
+          <input type="text" class="form-control p-0 text-center" placeholder="" aria-label="jumlah" aria-describedby="button-addon1" id="jumlah">
+          <button class="btn btn-sm btn-outline-secondary" type="button" id="button-addon2" onclick="tambah()"><i class="fa-solid fa-plus"></i></button>
+          <span class="text-muted">Tersisa 25</span>
+        </div>
+        
+        <div class="btn-produk mt-5">
+          <button class="btn btn-dark btn-lg btn-sizing add-to-cart" data-product-id="9" data-product-name="RAKET BULUTANGKIS" data-product-price="215000" >Masukkan Keranjang</button>
+          <a href="#" class="btn btn-outline-success btn-custom btn-sizing btn-lg" >Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Deskripsi</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Review</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active p-2" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Ini mntap barang ada di 
+            Jakarta Timur</div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container">
+              <h3>Komentar</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                </div>
+                <div class="mb-3">
+                  <label for="komentar" class="form-label">Komentar</label>
+                  <textarea class="form-control" id="komentar" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Kirim Komentar</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SINGLE PRODUK END -->
+
+  <!-- FOOTER START -->
+  <footer class="p-5 mt-5" style="background-color: #060709;">
+    <div class="container" >
+      <div class="row">
+        <div class="">
+          <a href="#" style="text-decoration: none;">
+            <img src="logo.jpg" alt="" style="width: 50px; height: 35px;">
+          </a>
+          <span style="color: white;">Copyright @2023 | Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16" style="color: red;">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg> by Beginer <a href="https://www.instagram.com/arrofaiz6/" class="text-decoration-none text-secondary fw-bold">Arrofi</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="singleProduk.js"></script>
+</body>
+
+</html>

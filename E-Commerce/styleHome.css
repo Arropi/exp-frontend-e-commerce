@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+.card:hover {
+  border: 2px solid black;
+}
+
+.link {
+  color: black;
+}
+
+.card {
+  background-color: whitesmoke;
+  border: none;
+}
+
+.border-disc {
+  margin-left: 4px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.discount {
+  width: 20px;
+  height: 15px;
+}
+
+.cart-items {
+  height: 300px ;
+  overflow: scroll;
+}
+
+.icon-bintang {
+  color: orange !important;
+}
+
+.form-filter {
+  width: 70px;
+  background-color: gray;
+}
+
